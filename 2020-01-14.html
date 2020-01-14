@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        #wrapper {
+          width: 600px;
+          height: 600px;
+          margin: 0 auto;
+          background-color: grey;
+          position: relative;
+        }
+        /* ここに処理を追記する */
+        #red, #blue, #yellow, #green {
+          position: absolute;
+        }
+        #red, #green {
+          width: calc(100% / 3);
+          height: calc(200% / 3);
+        }
+        #blue, #yellow {
+          width: calc(200% / 3);
+          height: calc(100% / 3);
+        }
+        #red {
+          background-color: red;
+        }
+
+        #blue {
+          background-color: blue;
+          left: calc(100% / 3);
+        }
+        #yellow {
+          background-color: yellow;
+          top: calc(200% / 3);
+        }
+        #green {
+          background-color: green;
+          top:  calc(100% / 3);
+          left: calc(200% / 3);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+      <!-- ここに処理を追記する -->
+      <div id="red"></div>
+      <div id="blue"></div>
+      <div id="green"></div>
+      <div id="yellow"></div>
+    </div>
+</body>
+</html>
